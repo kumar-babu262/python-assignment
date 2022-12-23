@@ -1,0 +1,17 @@
+def happy(n):
+    s=0
+    r=0
+    while n>0:
+         r=n%10
+         s=s+r*r
+         n=n//10
+    return s
+n=int(input("enter any number:"))
+while n>0:
+ n-=1
+ t=n
+ while t>9:
+    t=happy(t)
+ if t==1 or t==7:
+    print("previous happy number:",n)
+    break
