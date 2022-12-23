@@ -1,0 +1,4 @@
+n=int(input("enter how many numbers"))
+l=list(map(int,input().split()))
+print("min=",min(l))
+print("max=",max(l))
